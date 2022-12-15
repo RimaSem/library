@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  height: 100vh;
+  background-image: url("img/book-shelf.jpg");
+  background-size: cover;
+  background-color: rgb(63, 63, 63);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-width: clamp(200px, 80vw, 600px);
+  height: fit-content;
+  padding: 8%;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 1px #9c9c9cce;
+}
+
+.form-container img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #af305f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 6px 8px;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  align-self: flex-start;
+  transform: scale(1.5);
+  accent-color: #af305f;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.add-btn {
+  cursor: pointer;
+  padding: 8px 8px;
+  font-size: 1rem;
+  color: white;
+  background-color: #af305f;
+  border: none;
+  border-radius: 3px;
+}
