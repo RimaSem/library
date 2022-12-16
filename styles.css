@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Oleo+Script:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 body {
   height: 100vh;
@@ -12,6 +12,57 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  color: white;
+  display: flex;
+  align-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 5vh 16vw;
+  color: #ffffff;
+  gap: 2rem;
+}
+
+header h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+header button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #af305f;
+  color: white;
+  border: 0;
+}
+
+header button:hover {
+  background-color: #bb3c6b;
+}
+
+header button:active {
+  background-color: #af305f;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
 .form-container {
   box-sizing: border-box;
   display: flex;
@@ -22,6 +73,8 @@ body {
   padding: 8%;
   border-radius: 5px;
   box-shadow: 0 0 8px 1px #9c9c9cce;
+  z-index: 1; /* Sit on top */
+  display: none;
 }
 
 .form-container img {
@@ -71,4 +124,12 @@ label {
   background-color: #af305f;
   border: none;
   border-radius: 3px;
+}
+
+.add-btn:hover {
+  background-color: rgb(203, 55, 109);
+}
+
+.add-btn:active {
+  background-color: #af305f;
 }
