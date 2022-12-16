@@ -1,24 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Oleo+Script:wght@400;700&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 body {
-  height: 100vh;
+  margin: 0px;
+  width: 100vw;
   background-image: url("img/book-shelf.jpg");
   background-size: cover;
   background-color: rgb(63, 63, 63);
   background-blend-mode: multiply;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
 }
 
+/* Header section */
+
 header {
+  width: 70%;
   color: white;
   display: flex;
-  align-self: flex-start;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
   margin: 5vh 16vw;
   color: #ffffff;
   gap: 2rem;
@@ -54,14 +57,69 @@ header button:active {
   background-color: #af305f;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
+/* Main content section */
+
+.books {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.95fr));
+  grid-template-rows: auto;
+  gap: 20px;
 }
+
+.book-card {
+  flex: 1;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.book-card h2 {
+  font-size: 1.4rem;
+  margin: 0px;
+  padding-bottom: 12px;
+}
+
+.card-content {
+  line-height: 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.book-card-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 6%;
+}
+
+.book-card-buttons button {
+  padding: 8px 8px;
+  background-color: #af305f;
+  font-size: 1rem;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 35%;
+}
+
+.plus-card {
+  background-color: #fff4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #54545455;
+  cursor: pointer;
+}
+
+/* Form section */
 
 .form-container {
   box-sizing: border-box;
@@ -77,7 +135,7 @@ header button:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
+  display: none;
 }
 
 .form-container img {
@@ -135,4 +193,23 @@ label {
 
 .add-btn:active {
   background-color: #af305f;
+}
+
+/* Resizing for smaller devices */
+
+@media only screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .books {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

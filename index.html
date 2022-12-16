@@ -15,26 +15,95 @@
         <img src="img/plus-box.svg" width="20px" height="20px" /> Add book
       </button>
     </header>
-    <main>
-      <div class="form-container">
-        <div class="form-header">
-          <div class="form-title">Add a new book</div>
-          <img src="img/close-box.svg" alt="close form button" />
+    <div class="books">
+      <div class="book-card">
+        <h2>Charlie and the Chocolate Factory</h2>
+        <div class="card-content">
+          <div class="card-content-left">
+            <div class="book-title">Author:</div>
+            <div class="book-pages">Pages:</div>
+            <div class="book-published">Published:</div>
+            <div class="book-read">Read?</div>
+          </div>
+          <div class="card-content-right">
+            <div>Roald Dahl</div>
+            <div>145</div>
+            <div>1964</div>
+            <input class="book-card-checkbox" type="checkbox" checked="" />
+          </div>
         </div>
-        <form action="#" method="get">
-          <label for="title">Title:</label>
-          <input type="text" id="title" name="title" />
-          <label for="author">Author:</label>
-          <input type="text" id="author" name="author" />
-          <label for="pages">Pages:</label>
-          <input type="tel" id="pages" name="pages" />
-          <label for="published">Published:</label>
-          <input type="tel" id="published" name="published" />
-          <label for="read">Read?</label>
-          <input type="checkbox" name="read" id="read" />
-          <button type="button" class="add-btn">Add</button>
-        </form>
+        <div class="book-card-buttons">
+          <button class="">Delete</button>
+          <button class="">Edit</button>
+        </div>
       </div>
-    </main>
+
+      <div class="book-card">
+        <h2>Charlie and the Chocolate Factory</h2>
+        <div class="card-content">
+          <div class="card-content-left">
+            <div class="book-title">Author:</div>
+            <div class="book-pages">Pages:</div>
+            <div class="book-published">Published:</div>
+            <div class="book-read">Read?</div>
+          </div>
+          <div class="card-content-right">
+            <div>Roald Dahl</div>
+            <div>145</div>
+            <div>1964</div>
+            <input class="book-card-checkbox" type="checkbox" checked="" />
+          </div>
+        </div>
+        <div class="book-card-buttons">
+          <button class="">Delete</button>
+          <button class="">Edit</button>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <h2>Charlie and the Chocolate Factory</h2>
+        <div class="card-content">
+          <div class="card-content-left">
+            <div class="book-title">Author:</div>
+            <div class="book-pages">Pages:</div>
+            <div class="book-published">Published:</div>
+            <div class="book-read">Read?</div>
+          </div>
+          <div class="card-content-right">
+            <div>Roald Dahl</div>
+            <div>145</div>
+            <div>1964</div>
+            <input class="book-card-checkbox" type="checkbox" checked="" />
+          </div>
+        </div>
+        <div class="book-card-buttons">
+          <button class="">Delete</button>
+          <button class="">Edit</button>
+        </div>
+      </div>
+
+      <!-- <div class="plus-card">
+        <img src="img/plus-box.svg" alt="add-book box" width="30px" />
+      </div> -->
+    </div>
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-title">Add a new book</div>
+        <img src="img/close-box.svg" alt="close form button" />
+      </div>
+      <form action="#" method="get">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" />
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" />
+        <label for="pages">Pages:</label>
+        <input type="tel" id="pages" name="pages" />
+        <label for="published">Published:</label>
+        <input type="tel" id="published" name="published" />
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" id="read" />
+        <button type="button" class="add-btn">Add</button>
+      </form>
+    </div>
   </body>
 </html>
