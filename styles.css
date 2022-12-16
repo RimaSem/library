@@ -70,11 +70,14 @@ header button:active {
   background-color: white;
   min-width: clamp(200px, 80vw, 600px);
   height: fit-content;
-  padding: 8%;
+  padding: 3%;
   border-radius: 5px;
   box-shadow: 0 0 8px 1px #9c9c9cce;
-  z-index: 1; /* Sit on top */
-  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
 }
 
 .form-container img {
