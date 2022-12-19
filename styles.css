@@ -63,7 +63,6 @@ header button:active {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 0.9fr));
-  /* grid-template-rows: auto; */
   gap: 20px;
 }
 
@@ -81,7 +80,6 @@ header button:active {
 }
 
 .book-card h2 {
-  /* max-width: 230px; */
   color: #7f2345;
   font-size: 1.4rem;
   margin: 0px;
@@ -89,10 +87,17 @@ header button:active {
 }
 
 .card-content {
-  /* width: max-content; */
   line-height: 2.5rem;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-content-line {
+  display: flex;
+  gap: 20px;
+  line-height: 1.5rem;
+  justify-content: space-between;
 }
 
 .card-content-left {
@@ -100,19 +105,9 @@ header button:active {
   color: #671c38;
 }
 
-.card-content-right {
-  /* border: 1px solid red; */
+.book-author {
+  text-align: right;
 }
-
-.card-content-right img {
-  position: relative;
-  top: 4px;
-}
-
-/* .author-name {
-  inline-size: 100px;
-  overflow-wrap: break-word;
-} */
 
 .book-card-buttons {
   display: flex;

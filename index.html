@@ -15,94 +15,24 @@
         <img src="img/plus-box.svg" width="20px" height="20px" /> Add book
       </button>
     </header>
-    <div class="books">
-      <div class="book-card">
-        <h2>Pride and Prejudice</h2>
-        <div class="card-content">
-          <div class="card-content-left">
-            <div class="book-title">Author:</div>
-            <div class="book-pages">Pages:</div>
-            <div class="book-published">Published:</div>
-            <div class="book-read">Read?</div>
-          </div>
-          <div class="card-content-right">
-            <div>Jane Austen</div>
-            <div>259</div>
-            <div>1813</div>
-            <img src="img/checkbox-marked.svg" width="24px" />
-          </div>
-        </div>
-        <div class="book-card-buttons">
-          <button class="delete-btn">Delete</button>
-          <button class="edit-btn">Edit</button>
-        </div>
-      </div>
-
-      <div class="book-card">
-        <h2>Wuthering Heights</h2>
-        <div class="card-content">
-          <div class="card-content-left">
-            <div class="book-title">Author:</div>
-            <div class="book-pages">Pages:</div>
-            <div class="book-published">Published:</div>
-            <div class="book-read">Read?</div>
-          </div>
-          <div class="card-content-right">
-            <div>Emily Brontë</div>
-            <div>272</div>
-            <div>1847</div>
-            <img src="img/checkbox-marked.svg" width="24px" />
-          </div>
-        </div>
-        <div class="book-card-buttons">
-          <button class="delete-btn">Delete</button>
-          <button class="edit-btn">Edit</button>
-        </div>
-      </div>
-
-      <div class="book-card">
-        <h2>A Room of One's Own</h2>
-        <div class="card-content">
-          <div class="card-content-left">
-            <div class="book-title">Author:</div>
-            <div class="book-pages">Pages:</div>
-            <div class="book-published">Published:</div>
-            <div class="book-read">Read?</div>
-          </div>
-          <div class="card-content-right">
-            <div class="author-name">V. Woolf</div>
-            <div>172</div>
-            <div>1929</div>
-            <img src="img/checkbox-marked.svg" width="24px" />
-          </div>
-        </div>
-        <div class="book-card-buttons">
-          <button class="delete-btn">Delete</button>
-          <button class="edit-btn">Edit</button>
-        </div>
-      </div>
-
-      <div class="plus-card">
-        <img src="img/plus-box.svg" alt="add-book box" />
-      </div>
-    </div>
+    <div class="books"></div>
     <div class="form-container">
       <div class="form-header">
         <div class="form-title">Add a new book</div>
         <img src="img/close-box.svg" alt="close form button" />
       </div>
-      <form action="#" method="get">
+      <form action="#" method="post" id="myForm">
         <label for="title">Title:</label>
-        <input type="text" id="title" name="title" />
+        <input type="text" id="title" name="title" required />
         <label for="author">Author:</label>
-        <input type="text" id="author" name="author" />
+        <input type="text" id="author" name="author" required />
         <label for="pages">Pages:</label>
-        <input type="tel" id="pages" name="pages" />
+        <input type="tel" id="pages" name="pages" required />
         <label for="published">Published:</label>
-        <input type="tel" id="published" name="published" />
+        <input type="tel" id="published" name="published" required />
         <label for="read">Read?</label>
         <input type="checkbox" name="read" id="read" />
-        <button type="button" class="add-btn">Add</button>
+        <button type="submit" class="add-btn">Add</button>
       </form>
     </div>
   </body>
